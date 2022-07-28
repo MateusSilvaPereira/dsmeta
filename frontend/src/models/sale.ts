@@ -6,4 +6,3 @@ export type Sale = {
     deals: number;
     amount: number;
 }
-
