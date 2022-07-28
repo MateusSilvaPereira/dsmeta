@@ -6,14 +6,14 @@ import { BASE_URL } from '../../utils/request';
 import './styles.css';
 
 type Props = {
-    saleId:number;
+    saleId: number;
 }
 
 function handleClick(id : number){
 axios(`${BASE_URL}/sales/${id}/notification`)
-    .then(Response => {
+    .then(response => {
         toast.info("SMS enviado com sucesso!");
-    })
+    });
 }
 
 function NotificationButton({saleId} : Props) {
